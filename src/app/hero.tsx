@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Input, Button, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 function Hero() {
   return (
@@ -30,7 +30,7 @@ function Hero() {
           width={1024}
           height={1024}
           alt="team work"
-          src="/image/image-7.svg"
+          src="/image/my_pic2.png"
           className="h-[36rem] w-full rounded-xl object-cover"
         />
       </div>

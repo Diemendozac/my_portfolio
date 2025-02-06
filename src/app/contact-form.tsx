@@ -25,7 +25,7 @@ export function ContactForm() {
           Ready to get started? Feel free to reach out through the contact form,
           and let&apos;s embark on a journey of innovation and success.
         </Typography>
-      </div>
+      </div> 
       <div>
         <Card shadow={true} className="container mx-auto border border-gray/50" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
