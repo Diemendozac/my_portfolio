@@ -12,12 +12,14 @@ function Hero() {
             variant="h1"
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
+            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
           >
             Welcome to my Web <br /> Development Portofolio!
           </Typography>
           <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
+            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
           >
             I&apos;m Diego Mendoza, a passionate web developer based in Colombia. Here,
             you&apos;ll get a glimpse of my journey in the world of web
