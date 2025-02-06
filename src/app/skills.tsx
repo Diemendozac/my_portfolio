@@ -6,8 +6,9 @@ import {
   FingerPrintIcon,
   SwatchIcon,
   HashtagIcon,
-  EyeIcon,
   DocumentTextIcon,
+  ServerIcon,
+  CloudIcon
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "@/components";
 
@@ -22,14 +23,14 @@ const SKILLS = [
     icon: FingerPrintIcon,
     title: "Mobile App Development",
     children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
+      " I specialize in creating miltiplatformz and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
   },
   {
-    icon: SwatchIcon,
-    title: "Technology Stack",
+    icon: ServerIcon,
+    title: "Backend Development",
     children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
-  },
+      "I build robust backend systems using Java, ensuring your applications run securely, scalably, and efficiently. This not only provides seamless integration with the frontend, but also enhances overall performance and reliability.",
+  },  
   {
     icon: HashtagIcon,
     title: " Web Optimization",
@@ -37,10 +38,10 @@ const SKILLS = [
       "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
   },
   {
-    icon: EyeIcon,
-    title: "User-Centric Design",
+    icon: CloudIcon,
+    title: "DevOps",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "Operational excellence is paramount. I implement robust DevOps practices with a deep understanding of AWS and GCloud, ensuring streamlined workflows, seamless deployments, and scalable, reliable infrastructure.",
   },
   {
     icon: DocumentTextIcon,
@@ -52,7 +53,7 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="px-8">
+    <section id="skills" className="px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           my skills

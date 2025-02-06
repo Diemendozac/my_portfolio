@@ -33,7 +33,12 @@ export function Footer() {
                 </Typography>
               </li>
             ))}
-            <Button color="gray" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>subscribe</Button>
+            <div className="flex items-center">
+              <img src="/logos/my_logo.svg" alt="Logo" className="h-8 mr-2" />
+              <Typography color="blue-gray" className="text-lg font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                Diego Mendoza
+              </Typography>
+            </div>
           </ul>
         </div>
       </div>

@@ -2,7 +2,6 @@ import React from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
-  Button,
   IconButton,
   Typography,
 } from "@material-tailwind/react";
@@ -18,10 +17,12 @@ const NAV_MENU = [
   {
     name: "Skills",
     icon: PaperAirplaneIcon,
+    href: "#skills",
   },
   {
     name: "Projects",
     icon: CommandLineIcon,
+    href: "#projects",
   },
   {
     name: "Resume",
@@ -41,7 +42,7 @@ function NavItem({ children, href }: NavItemProps) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href ? "_blank" : "_self"}
+        target={"_self"}
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
@@ -66,9 +67,12 @@ export function Navbar() {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          Diego Mendoza
-        </Typography>
+        <div className="flex items-center">
+          <img src="/logos/my_logo.svg" alt="Logo" className="h-8 mr-2" />
+          <Typography color="blue-gray" className="text-lg font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            Diego Mendoza
+          </Typography>
+        </div>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem key={name} href={href}>
